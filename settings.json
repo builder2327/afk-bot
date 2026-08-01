@@ -1,15 +1,14 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "bot",
+    "username": "wiener dog",
     "password": "",
     "type": "offline"
   },
   "server": {
     "ip": "builder_bot.aternos.me",
     "port": 43425,
-    "version": "",
-    "try-creative": false
+    "version": "1.21.1"
   },
   "position": {
     "enabled": true,
@@ -20,24 +19,29 @@
   "utils": {
     "auto-auth": {
       "enabled": true,
-      "password": "SoloPlayz"
+      "password": "Slobos"
     },
     "anti-afk": {
       "enabled": true,
       "sneak": true
     },
     "chat-messages": {
-      "enabled": true,
+      "enabled": false,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 500,
       "messages": [
-        "i am a bot implemented to keep the server on 24/7 please dont mind me"
+        "I'm a regular player"
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
     "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "max-reconnect-delay": 20000,
+    "periodic-rejoin": {
+      "enabled": true,
+      "min-interval": 20,
+      "max-interval": 60
+    }
   },
   "movement": {
     "enabled": true,
@@ -58,7 +62,7 @@
   "modules": {
     "avoidMobs": true,
     "combat": true,
-    "beds": false,
+    "beds": true,
     "chat": true,
     "console-commands": true
   },
@@ -67,11 +71,11 @@
     "auto-eat": true
   },
   "beds": {
-    "pick-up-day": false,
-    "place-night": false
+    "pick-up-day": true,
+    "place-night": true
   },
   "discord": {
-    "enabled": false,
+    "enabled": true,
     "webhookUrl": "",
     "events": {
       "connect": true,
